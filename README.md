@@ -9,6 +9,7 @@ This is a simple Solidity smart contract that allows users to deposit and withdr
 1. constructor()
 
 The constructor is executed only once during the contract deployment. It sets the contract owner to the address of the account that deployed the contract.
+
 2. deposit()
 
 The deposit() function allows users to deposit Ether into the contract. To deposit Ether, users need to call this function with an attached amount of Ether. The function performs the following steps:
@@ -17,7 +18,9 @@ The deposit() function allows users to deposit Ether into the contract. To depos
 *   It uses assert() to ensure that the addition of the deposited amount to contractBalance does not cause an overflow. If an overflow is detected, the transaction will revert.
 
 *   The contract balance is updated by adding the deposited amount to contractBalance.
+  
 3. withdraw(uint256 amount)
+   
 The withdraw() function allows users to withdraw a specific amount of Ether from the contract. The function takes one parameter amount, which represents the amount of Ether the user wants to withdraw. The function performs the following steps:
 
 *    It uses require() to check that the contract has enough balance to cover the withdrawal. If the contract balance is less than the requested withdrawal amount, the function reverts with an error message.
