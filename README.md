@@ -6,7 +6,7 @@ This is a simple Solidity smart contract that allows users to deposit and withdr
 
 * owner: A public variable representing the address of the contract owner. The owner is set during contract deployment and is typically the address of the account that deployed the contract.
 # Functions
-* 1. constructor()
+1. constructor()
 
 The constructor is executed only once during the contract deployment. It sets the contract owner to the address of the account that deployed the contract.
   
