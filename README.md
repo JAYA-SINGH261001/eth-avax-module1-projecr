@@ -5,3 +5,8 @@ This is a simple Solidity smart contract that allows users to deposit and withdr
 * contractBalance: A public variable representing the total balance held by the contract. Users can deposit Ether into the contract, increasing this balance, and withdraw Ether, decreasing this balance.
 
 * owner: A public variable representing the address of the contract owner. The owner is set during contract deployment and is typically the address of the account that deployed the contract.
+# Functions
+* 1. constructor()
+
+The constructor is executed only once during the contract deployment. It sets the contract owner to the address of the account that deployed the contract.
+  
